@@ -1,78 +1,45 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>PASSWORD</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
 </head>
 
 <body onload="inicializar()">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/key.js"></script>
   <script type="text/javascript" src="js/musicgen.js"></script>
-  <nav>
-    <div class="nav-wrapper amber darken-4">
-      <a href="#" class="brand-logo center">PASSWORD COMPETITION 2018</a>
-    </div>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand mx-auto" href="#">PASSWORD COMPETITION</a>
   </nav>
 
+  <br />
+  <br />
 
-  <div class="container">
-    <div class="center-align">
-      <h1><div id = "contenedor">60</div></h1>
-      <div class="progress">
-        <div class="determinate" id="elemento"></div>
-      </div>
-      <br />
-      <h2><div id = "words">Welcome to Password 2018!</div></h2>
-      <br />
-      <br />
-      <br />
-      <div class="row">
-        <div class="col s4 m4">
-          <div class="card blue">
-            <div class="card-content white-text">
-              <span class="card-title"><h2>Ordes</h2></span>
-              <p>
-                <h1><div id = "arteixop">0</div></h1></p>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m4">
-          <div class="card green">
-            <div class="card-content white-text">
-              <span class="card-title"><h2>Melide</h2></span>
-              <p>
-                <h1><div id = "ordesp">0</h1></font>
-              </p>
-            </div>
-          </div>
-        </div>
+  <p class="display-1 text-center" id="timeleft">60</p>
 
-        <div class="col s4 m4">
-          <div class="card red">
-            <div class="card-content white-text">
-              <span class="card-title"><h2>A Laracha</h2></span>
-              <p>
-                <h1><div id = "larachap">0</div></h1></p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <br />
 
-
+  <div class="progress" style="height: 30px;">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" </div>
+      <!--<div class="center" id="timeleft"></div>-->
     </div>
-  </div>
 
-  <script type="text/javascript" src="js/scoreboard.js"></script>
-  <script type="text/javascript" src="js/words.js"></script>
-  <script type="text/javascript" src="js/hipermegaArray.js"></script>
-  <script type="text/javascript" src="js/timer.js"></script>
+
+    <script type="text/javascript" src="js/scoreboard.js"></script>
+    <script type="text/javascript" src="js/words.js"></script>
+    <script type="text/javascript" src="js/hipermegaArray.js"></script>
+    <script type="text/javascript" src="js/brandnewtimer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
