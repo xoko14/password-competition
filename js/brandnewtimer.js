@@ -1,6 +1,13 @@
 var timer = false;
 
+function resetTimer(){
+  document.getElementById("stress").classList.remove('progress-bar-animated');
+  $(".progress-bar").attr("aria-valuenow", 100);
+  $(".progress-bar").css("width", 100 + "%");
+}
+
 function go() {
+  document.getElementById("stress").classList.add('progress-bar-animated');
   clearInterval(timer);
   i = 60;
   timer = setInterval(function() {
@@ -10,6 +17,7 @@ function go() {
     if (i == 0) {
       $("#timeleft").html("0");
       clearInterval(timer);
+      resetTimer();
     }
     i--;
   }, 1000);

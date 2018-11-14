@@ -12,7 +12,7 @@
 
 </head>
 
-<body onload="inicializar()">
+<body onload="inicializar();resetTimer();">
   <script type="text/javascript" src="js/key.js"></script>
   <script type="text/javascript" src="js/musicgen.js"></script>
 
@@ -32,7 +32,7 @@
         <br />
 
         <div class="progress" style="height: 30px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" id="stress" aria-valuemin="0" aria-valuemax="100"></div>
           <!--<div class="center" id="timeleft"></div>-->
         </div>
 
@@ -45,28 +45,28 @@
       <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
         <h1 class="card-header text-center">Arteixo</h1>
         <div class="card-body">
-          <p class="display-2 text-center">0</p>
+          <p class="display-2 text-center" id="arteixop">0</p>
         </div>
       </div>
 
       <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
         <h1 class="card-header text-center">Ordes</h1>
         <div class="card-body">
-          <p class="display-2 text-center">0</p>
+          <p class="display-2 text-center" id="ordesp">0</p>
         </div>
       </div>
 
       <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
         <h1 class="card-header text-center">Carballo</h1>
         <div class="card-body">
-          <p class="display-2 text-center">0</p>
+          <p class="display-2 text-center" id="carballop">0</p>
         </div>
       </div>
 
       <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
         <h1 class="card-header text-center">A Laracha</h1>
         <div class="card-body">
-          <p class="display-2 text-center">0</p>
+          <p class="display-2 text-center" id="larachap">0</p>
         </div>
       </div>
     </div>

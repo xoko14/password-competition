@@ -18,9 +18,15 @@ function inicializar() {
         ordesLess();
         break;
       case 69:
-        larachaPlus();
+        carballoPlus();
         break;
       case 68:
+        carballoLess();
+        break;
+      case 82:
+        larachaPlus();
+        break;
+      case 70:
         larachaLess();
         break;
       case 77:
