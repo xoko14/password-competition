@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PASSWORD</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+</head>
+
+<body onload="inicializar();resetTimer();">
+  <script type="text/javascript" src="js/key.js"></script>
+  <script type="text/javascript" src="js/musicgen.js"></script>
+
+  <!--<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand mx-auto" href="#">PASSWORD COMPETITION</a>
+  </nav>-->
+
+  <br />
+
+  <div class="row">
+    <div class="col-8">
+      <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p class="display-1 text-center" id="timeleft">60</p>
+
+        <br />
+
+        <div class="progress" style="height: 30px;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" id="stress" aria-valuemin="0" aria-valuemax="100"></div>
+          <!--<div class="center" id="timeleft"></div>-->
+        </div>
+
+        <br />
+        <p class="h1 text-center" id="words">Welcome to Password 2019!</p>
+      </div>
+    </div>
+    <div class="col-4">
+
+      <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <h1 class="card-header text-center">Arteixo</h1>
+        <div class="card-body">
+          <p class="display-2 text-center" id="arteixop">0</p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <h1 class="card-header text-center">Ordes</h1>
+        <div class="card-body">
+          <p class="display-2 text-center" id="ordesp">0</p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+        <h1 class="card-header text-center">Carballo</h1>
+        <div class="card-body">
+          <p class="display-2 text-center" id="carballop">0</p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <h1 class="card-header text-center">A Laracha</h1>
+        <div class="card-body">
+          <p class="display-2 text-center" id="larachap">0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="js/scoreboard.js"></script>
+  <script type="text/javascript" src="js/words.js"></script>
+  <script type="text/javascript" src="js/hipermegaArray.js"></script>
+  <script type="text/javascript" src="js/brandnewtimer.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
