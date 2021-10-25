@@ -19,7 +19,7 @@ function obtenerPalabrasAleatorias(){
 	
 	while(palabrasSelecionadas.length < 5){
 		
-		this.numeroActual = obtenerNumeroAleatorioEntre(0, 779); // Del cero al 9 hay 10 numeros
+		this.numeroActual = obtenerNumeroAleatorioEntre(0, palabras.length); // Del cero al 9 hay 10 numeros
 		
 		for(var n in numerosUsados){ // Repasar todos los numeros que ya se hayan pillado
 			
